@@ -61,7 +61,7 @@ const isLoading = ref(true);
 
 // Ambil semua post dari collection "blog"
 const { data: posts } = await useAsyncData('all-posts', () =>
-  queryCollection('blog')
+  queryCollection('media')
     .select('title', 'excerpt2', 'cover_image', 'path', 'id', 'date', 'author', 'category')
     .order('date', 'DESC')
     .all()

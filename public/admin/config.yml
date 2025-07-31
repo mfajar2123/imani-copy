@@ -6,9 +6,9 @@ media_folder: public/img/admin
 public_folder: /img/admin
 
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "content/blog"
+  - name: "media"
+    label: "Media"
+    folder: "content/media"
     format: "frontmatter"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
