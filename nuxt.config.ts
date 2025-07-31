@@ -15,7 +15,7 @@ export default defineNuxtConfig({
     prerender: {
       failOnError: false,
     },
-    preset: 'netlify-edge'
+    
   },
   // app:{
   //   baseURL: process.env.BASE_URL
