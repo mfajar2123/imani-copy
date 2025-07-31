@@ -54,8 +54,10 @@ export default defineNuxtConfig({
       scrollTrigger: true
     }
   },
+
+ 
   runtimeConfig: {
-    public: {
+    public: { 
       wordpressUrl: 'https://webdev.imaniprima.co.id/graphql',
       serviceUrl: 'https://apimail.imaniprima.co.id/api',
       restUrl: 'https://webdev.imaniprima.co.id/wp-json/wp/v2'
@@ -69,11 +71,17 @@ export default defineNuxtConfig({
       name: 'rotate'
     }
   },
+
   scripts: {
     registry: {
       googleAnalytics: {
         id: 'G-YEP3MNSGN9'
       }
     }
-  }
+  },
+
+ content: {
+  highlight: false
+}
+
 })
