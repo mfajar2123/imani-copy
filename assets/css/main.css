@@ -1,0 +1,593 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/** Header & Footer **/
+
+p {
+    margin: 10px 0 10px 0;
+}
+.main-bg {
+    background-color: #305e63;
+}
+
+.green-banner {
+    background-color: rgb(12 135 105);
+}
+
+.yellow-dark-bg {
+    background-color: #CE7000;
+}
+
+.yellow-bg {
+    background-color: #FFA809;    
+}
+
+.yellow-ca-bg {
+    background-color: #ffc04e;
+}
+
+.green-ca-bg {
+    background-color: #122421;
+}
+
+.button-bg {
+    background-color: #FFA809;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.green-imani {
+    background-color: #305e63;
+}
+
+.gray-imani {
+    background-color: #f1f1f1;
+}
+
+.bg-company {
+    background-color: #85c2a1;
+}
+
+.bg-service1 {
+    background-color: #d7ebea;
+}
+
+.bg-service2 {
+    background-color: #4c927d;
+}
+
+.bg-solutions { 
+    background-color: #00677a;
+}
+
+.bg-iot {
+    background-color: #333333;
+}
+
+.bg-iot-b{
+    background-color: #dfeeea;
+}
+
+.bg-usecase {
+    background-color: #6A8487;
+}
+
+.bg-green-light {
+    background-color: #dfeeea;
+    ;
+}
+
+.bg-green-shine {
+    background-color: #0c8769;
+}
+
+.bg-contact {
+    background-color: #df9c0d;
+}
+
+.bg-media {
+    background-color: #26534e;
+}
+
+.separator-diagonal-1a, .separator-diagonal-1b, .separator-diagonal-2a, .separator-diagonal-bottom-comp1a, .separator-diagonal-bottom-comp1b, .separator-diagonal-ai1a, .separator-diagonal-ai1b,
+.separator-iot-1a, .separator-iot-1b, .separator-iot-1c, .separator-uc-1a, .separator-uc-1b, .separator-ca-1a, .separator-ca-1b, .separator-ca-2b, .separator-media-1a {
+ position: relative;
+ height: 130px;
+}
+
+.separator-diagonal-1a::after {
+content:"";
+position: absolute;
+height: 100%;
+width: 100%;
+background: #ffffff;
+clip-path: polygon(100% 0, 0 0,0 100%);
+top: -1px;
+}
+
+.separator-diagonal-1a::before{
+content: "";
+position: absolute;
+height: 101%;
+width: 100%;
+background: #dfeeea;
+clip-path: polygon(100% 0, 0 100%, 100% 100%);
+}
+
+.separator-diagonal-1b::after {
+    content:"";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #dfeeea;
+    clip-path: polygon(100% 0, 0 0,0 100%);
+    top: -1px;
+    }
+    
+    .separator-diagonal-1b::before{
+    content: "";
+    position: absolute;
+    height: 101%;
+    width: 100%;
+    background: #ffffff;
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+    }
+
+    .separator-diagonal-2a::after {
+        content:"";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: #ffffff;
+        clip-path: polygon(100% 0, 0 0,0 100%);
+        top: -1px;
+        }
+        
+        .separator-diagonal-2a::before{
+        content: "";
+        position: absolute;
+        height: 101%;
+        width: 100%;
+        background: #305e63;
+        clip-path: polygon(100% 0, 0 101%, 200% 100%);
+        }
+
+        .separator-diagonal-bottom-comp1a::after {
+        content:"";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: #f1f1f1;
+        clip-path: polygon(100% 0, 0 0,0 100%);
+        top: -1px;
+        }
+
+        .separator-diagonal-bottom-comp1a::before {
+        content: "";
+        position: absolute;
+        height: 101%;
+        width: 100%;
+        background: #ffffff;
+        clip-path: polygon(100% 0, 0 100%, 100% 100%);
+        }
+
+        .separator-diagonal-bottom-comp1b::after {
+            content:"";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background: #ffffff;
+            clip-path: polygon(100% 0, 0 0,0 100%);
+            top: -1px;
+            }
+    
+            .separator-diagonal-bottom-comp1b::before {
+            content: "";
+            position: absolute;
+            height: 101%;
+            width: 100%;
+            background: #f1f1f1;
+            clip-path: polygon(100% 0, 0 100%, 100% 100%);
+            }
+
+            .separator-diagonal-ai1a::after {
+                content:"";
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                background: #ffffff;
+                clip-path: polygon(100% 0, 0 0,0 100%);
+                top: -1px;
+                }
+        
+            .separator-diagonal-ai1a::before {
+                content: "";
+                position: absolute;
+                height: 101%;
+                width: 100%;
+                background: #FFA809;
+                }
+        
+                .separator-diagonal-ai1b::after {
+                    content:"";
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    background: #FFA809;
+                    clip-path: polygon(100% 0, 0 0,0 100%);
+                    top: -1px;
+                    }
+            
+                .separator-diagonal-ai1b::before {
+                    content: "";
+                    position: absolute;
+                    height: 101%;
+                    width: 100%;
+                    background: #305e63;
+                    }
+
+                .separator-iot-1a::after {
+                    content:"";
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    background: #333333;
+                    clip-path: polygon(100% 0, 0 0,0 100%);
+                    top: -1px;
+                }
+
+                .separator-iot-1a::before {
+                    content:"";
+                    position: absolute;
+                    height: 101%;
+                    width: 100%;
+                    background: #dfeeea;
+                }
+
+                .separator-iot-1b::after {
+                    content:"";
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    background: #dfeeea;
+                    clip-path: polygon(100% 0, 0 0,0 100%);
+                    top: -1px;
+                }
+
+                .separator-iot-1b::before {
+                    content:"";
+                    position: absolute;
+                    height: 101%;
+                    width: 100%;
+                    background: #ffffff;
+                }
+
+                .separator-iot-1c::after {
+                    content:"";
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    background: #ffffff;
+                    clip-path: polygon(100% 0, 0 0,0 100%);
+                    top: -1px;
+                }
+
+                .separator-iot-1c::before {
+                    content:"";
+                    position: absolute;
+                    height: 101%;
+                    width: 100%;
+                    background: #dfeeea;
+                }
+
+                .separator-uc-1a::after {
+                    content:"";
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    background: #CE7000;
+                    clip-path: polygon(100% 0, 0 0,0 100%);
+                    top: -1px;
+                }
+
+                .separator-uc-1a::before {
+                    content:"";
+                    position: absolute;
+                    height: 101%;
+                    width: 100%;
+                    background: #305e63;
+                }
+
+                .separator-uc-1b::after {
+                    content:"";
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    background: #305e63;
+                    clip-path: polygon(100% 0, 0 0,0 100%);
+                    top: -1px;
+                }
+
+                .separator-uc-1b::before {
+                    content:"";
+                    position: absolute;
+                    height: 101%;
+                    width: 100%;
+                    background: #ffffff;
+                }
+
+                .separator-ca-1a::after {
+                    content:"";
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    background: #CE7000;
+                    clip-path: polygon(100% 0, 0 0,0 100%);
+                    top: -1px;
+                }
+
+                .separator-ca-1a::before {
+                    content:"";
+                    position: absolute;
+                    height: 101%;
+                    width: 100%;
+                    background: #305e63;
+                }
+
+                .separator-ca-1b::after {
+                    content:"";
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    background: #ffc04e;
+                    clip-path: polygon(100% 0, 0 0,0 100%);
+                    top: -1px;
+                }
+
+                .separator-ca-1b::before {
+                    content:"";
+                    position: absolute;
+                    height: 101%;
+                    width: 100%;
+                    background: #ffffff;
+                }
+
+                .separator-ca-2b::after {
+                    content:"";
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    background: #f1f1f1;
+                    clip-path: polygon(100% 0, 0 0,0 100%);
+                    top: -1px;
+                }
+
+                .separator-ca-2b::before {
+                    content: "";
+                    position: absolute;
+                    height: 101%;
+                    width: 100%;
+                    background: #305e63;
+                }
+
+                .separator-media-1a::after {
+                    content:"";
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    background: #FFA809;
+                    clip-path: polygon(100% 0, 0 0,0 100%);
+                    top: -1px;
+                }
+
+                .separator-media-1a::before {
+                    content:"";
+                    position: absolute;
+                    height: 101%;
+                    width: 100%;
+                    background: #f1f1f1;
+                }
+
+.media {
+ scroll-behavior: smooth;
+ scrollbar-width: thin;
+ height: 500px;
+}
+
+iframe.responsive-frame {
+    width: 100%;
+    height: 100%;
+}
+
+/**Nav Css**/
+.menu a:hover, a:focus, a:active {
+    color: #222;
+    text-decoration: none;
+}
+.menu a {
+    text-decoration: none;
+    transition: color 0.1s, background-color 0.1s;
+}
+.menu a {
+    position: relative;
+    display: block;
+    letter-spacing: 1px;
+    transition: color 0.1s,background-color 0.1s,padding 0.2s ease-in;
+    padding-bottom: 10px;
+}
+.menu a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #FFA809;
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: color 0.1s,transform 0.2s ease-out;
+}
+.menu a:active::before {
+    background-color: #FFA809;
+}
+.menu a:hover::before, a:focus::before {
+    transform-origin: left top;
+    transform: scale(1, 1);
+}
+
+.menu .router-link-active::before {
+    background-color: #FFA809;
+    transform: scale(1.0);
+}
+
+.home .header-bg, .company .header-bg, .career-page .header-bg, .career-apply .header-bg, .media .header-bg, .ai .header-bg, .iot .header-bg, .use-case .header-bg,
+.contact .header-bg, .article .header-bg {
+    position: fixed;
+    top: 0;
+    background-color: #305e63;
+    z-index: 20;
+}
+
+/** Image bottom **/
+.image {
+    position: relative;
+    left: auto;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    display: inline-block;
+    float: none;
+    text-align: left;
+  }
+
+.fadein-img {
+    position: relative;
+    display: inline-block;
+    width: 25%;
+
+  }
+
+
+  @keyframes fadeIn {
+
+    0% {
+        transform: translate3d(0px, 115px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+        transform-style: preserve-3d;
+        will-change: transform;
+        opacity: 0;
+    }
+    65% {
+        transform: translate3d(0px, 37.9868px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+        transform-style: preserve-3d;
+        will-change: transform;
+        opacity: 0.594738;
+    }
+    100%{
+        transform: translate3d(0px, 0.0874px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+        transform-style: preserve-3d;
+        will-change: transform;
+        opacity: 1;
+    }
+  }
+  
+  .fadein-img.img-1 {
+    top: 15%;
+    bottom: auto;
+  }
+
+  .fadein-img.img-3 {
+    left: 5%;
+    top: 10%;
+    right: auto;
+    }
+
+    .fadein-img.img-4 {
+     top: 26%;
+    }
+
+    .div-block {
+    position: relative;
+    bottom: 15%;
+    left: 20%;
+    width: 560px;
+    height: 450px;
+    }
+
+    @media only screen and (max-width: 640px){
+        .div-block {
+            width: 100%;
+        }
+        .bg-contact {
+            background-size: contain;
+        }
+    }
+
+    @-moz-document url-prefix(){
+        .div-block {
+            width: 70%;
+        }
+    }
+    
+    figure img {
+        border-radius: 10px;
+    }
+
+/** Halaman iot **/
+.group-87,
+.group-87 * {
+  box-sizing: border-box;
+}
+.group-87 {
+  position: relative;
+}
+.line-32 {
+  width: 1252.06px;
+  height: auto;
+  position: absolute;
+  left: 0px;
+  top: 56px;
+  overflow: visible;
+}
+.group-86 {
+  width: 202px;
+  height: 114px;
+  position: static;
+}
+.rectangle-685 {
+  background: #ffffff;
+  width: 202px;
+  height: 114px;
+  position: absolute;
+  left: calc(46% - 84px);
+  top: 0px;
+}
+.aissat-logo-grey-red {
+  width: 20%;
+  height: 74px;
+  position: absolute;
+  left: calc(50% - 84px);
+  top: 19px;
+  object-fit: cover;
+}
+
+/**Dropdown Button on table**/
+.DropButton {
+    inset: 0px 0px 0px -125px !important;
+    position: relative !important;
+    display: block;
+    width: 100%;
+    transform: translate(0px, 50px) !important;
+}
+
+/* Page Transition */
+.rotate-enter-active,
+.rotate-leave-active {
+  transition: all 0.4s;
+}
+.rotate-enter-from,
+.rotate-leave-to {
+  opacity: 0;
+  transform: rotate3d(1, 1, 1, 15deg);
+}

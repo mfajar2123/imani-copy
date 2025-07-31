@@ -1,0 +1,48 @@
+backend:
+  name: git-gateway
+  branch: fajar
+
+media_folder: public/img/admin
+public_folder: /img/admin
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "content/blog"
+    format: "frontmatter"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Excerpt", name: "excerpt2", widget: "string" }
+      - { label: "Cover Image", name: "cover_image", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Author", name: "author", widget: "string" }
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options: ["news", "article"]
+
+  - name: "brochure"
+    label: "Brochure"
+    folder: "content/brochure"
+    format: "json"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: product
+    fields:
+      - { label: "Product", name: "product", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Excerpt", name: "excerpt", widget: "text" }
+      - { label: "URL", name: "url", widget: "string" }
+      - { label: "Cover Image", name: "cover_image", widget: "image" }
+      - label: "Category"
+        name: "cat"
+        widget: "select"
+        options:
+          - { label: "Internet of Things", value: 1 }
+          - { label: "Artificial Intelligence", value: 2 }
+          - { label: "Others", value: 3 }
