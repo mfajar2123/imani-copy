@@ -10,6 +10,13 @@ import axios from 'axios';
 // };
 
 export default defineNuxtConfig({
+  vite: {
+    build: {
+      rollupOptions: {
+        external: ['unenv/runtime/mock/noop']
+      }
+    }
+  },
   ssr: true,
   nitro: {
     prerender: {
@@ -82,6 +89,8 @@ export default defineNuxtConfig({
 
  content: {
   highlight: false
-}
-
+},
+nitro: {
+    preset: 'netlify',
+  },
 })
