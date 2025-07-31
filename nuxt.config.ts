@@ -22,6 +22,7 @@ export default defineNuxtConfig({
     prerender: {
       failOnError: false,
     },
+    preset: 'netlify-edge'
     
   },
   // app:{
@@ -89,8 +90,5 @@ export default defineNuxtConfig({
 
  content: {
   highlight: false
-},
-nitro: {
-    preset: 'netlify',
-  },
+}
 })
