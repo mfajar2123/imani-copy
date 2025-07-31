@@ -24,7 +24,7 @@ collections:
       - label: "Category"
         name: "category"
         widget: "select"
-        options: ["news", "article"]
+        options: ["news", "articles"]
 
   - name: "brochure"
     label: "Brochure"

@@ -54,7 +54,7 @@ export default defineNuxtConfig({
     baseUrl: '/assets/img'
   },
 
-  modules: ['@nuxt/image', '@nuxt/content','@nuxt/ui','@nuxtjs/tailwindcss', '@nuxtjs/color-mode', '@pinia/nuxt', '@hypernym/nuxt-gsap'],
+  modules: ['@nuxt/image', '@nuxt/content','@nuxt/ui', '@nuxt/scripts','@nuxtjs/tailwindcss', '@nuxtjs/color-mode', '@pinia/nuxt', '@hypernym/nuxt-gsap'],
   gsap: {
     composables: true,
     provide: false,
