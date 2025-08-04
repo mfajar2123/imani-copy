@@ -1,6 +1,6 @@
 <template>
   <div class="article">
-    <Theheader />
+    <ArticleTheheader />
 
     <div class="container w-10/12 p-4 mx-auto mb-16">
       <div v-if="post">
@@ -8,7 +8,7 @@
           <div>
             <h1 class="text-4xl font-bold mt-16">{{ post.title }}</h1>
             <p class="mb-16 text-xs">
-              {{ formatDate(post.date) }} • {{ post.author || 'Admin' }} • {{ post.category }}
+             publish: {{ formatDate(post.date) }} • {{ post.category }}
             </p>
           </div>
           <div class="flex">
@@ -22,7 +22,7 @@
           </div>
         </div>
 
-        <div class="prose max-w-none">
+        <div class="prose max-w-none text-black">
           <ContentRenderer :value="post" />
         </div>
       </div>
