@@ -22,7 +22,7 @@
           </div>
         </div>
 
-        <div class="prose max-w-none text-black">
+        <div class="prose max-w-none text-black text-justify">
           <ContentRenderer :value="post" />
         </div>
       </div>
