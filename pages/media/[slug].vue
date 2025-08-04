@@ -22,12 +22,6 @@
           </div>
         </div>
 
-        <img
-          :src="post.cover_image"
-          alt="Cover Image"
-          class="rounded-xl w-full mb-6"
-        />
-
         <div class="prose max-w-none">
           <ContentRenderer :value="post" />
         </div>
