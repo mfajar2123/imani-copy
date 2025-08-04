@@ -1,5 +1,5 @@
 
-
+const typography = require('@tailwindcss/typography')
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -30,6 +30,7 @@ export default {
       'contain': 'contain',
     }
   },
+  plugins: [typography],
   module:{
     darkMode : ['variant', '&:not(.dark *)'],
   }

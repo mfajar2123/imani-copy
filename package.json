@@ -26,6 +26,7 @@
     "mysql2": "^3.11.3",
     "nuxt": "^3.13.0",
     "pinia": "^2.2.4",
+    "@tailwindcss/typography": "^0.5.16",
     "swiper": "^11.1.14",
     "vue": "latest"
   },

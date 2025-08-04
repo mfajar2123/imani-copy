@@ -75,6 +75,11 @@ definePageMeta({
 <style scoped>
 .prose :deep(img) {
   max-width: 100%;
+  height: auto;
   border-radius: 12px;
+  display: block;
+  margin: 1.5rem auto; /* kasih jarak atas bawah dan center */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* opsional: biar gambar lebih elegan */
 }
+
 </style>
