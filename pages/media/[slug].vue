@@ -42,12 +42,12 @@
 const route = useRoute()
 
 const pageId = computed(() => 'media-' + route.path)
-console.log('route.path', route.path)
+// console.log('route.path', route.path)
 const { data: post } = await useAsyncData(pageId, () => {
   return queryCollection('media').path(route.path).first()
 })
 
-console.log('post.value', post.value)
+// console.log('post.value', post.value)
 useSeoMeta({
   title: post.value?.title || 'Media Detail - Imani Prima',
   ogTitle: post.value?.title,

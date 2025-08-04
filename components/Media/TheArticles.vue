@@ -40,15 +40,15 @@
 
     <template v-else>
       <template v-if="activeTab === 0">
-        <PostCard v-for="post in posts" :key="post.id" :post="post" />
+        <MediaPostCard v-for="post in posts" :key="post.id" :post="post" />
       </template>
 
       <template v-if="activeTab === 1">
-        <PostCard v-for="post in dataArticles" :key="post.id" :post="post" />
+        <MediaPostCard v-for="post in dataArticles" :key="post.id" :post="post" />
       </template>
 
       <template v-if="activeTab === 2">
-        <PostCard v-for="post in dataNews" :key="post.id" :post="post" />
+        <MediaPostCard v-for="post in dataNews" :key="post.id" :post="post" />
       </template>
     </template>
   </div>
@@ -59,7 +59,6 @@
 const activeTab = ref(0);
 const isLoading = ref(true);
 
-// Ambil semua post dari collection "blog"
 const { data: posts } = await useAsyncData('all-posts', () =>
   queryCollection('media')
     .select('title', 'excerpt2', 'cover_image', 'path', 'id', 'date', 'author', 'category')
@@ -70,7 +69,6 @@ const { data: posts } = await useAsyncData('all-posts', () =>
 console.log(posts.value);
 isLoading.value = false;
 
-// Data tab artikel dan news berdasarkan kategori
 const dataArticles = computed(() =>
   posts.value?.filter((post) => post.category?.toLowerCase() === 'articles')
 );

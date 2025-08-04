@@ -10,7 +10,7 @@
             <div class="container w-10/12 mx-auto px-20 max-sm:px-4">
                 <p class="text-green-imani text-4xl font-bold my-11 text-center">Media</p>
                 <div class="bg-white p-16 rounded-2xl max-sm:p-4">
-                    <MediaBaru />
+                    <MediaTheArticles />
                 </div>
             </div>
             </div>
