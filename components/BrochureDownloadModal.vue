@@ -126,6 +126,7 @@ const dataForm = ref({
 
 const handleFormSubmit = async () => { console.log(JSON.parse(sessionStorage.getItem('download-log') as string));
     try {
+        downloadBrochure();
         const name_h = dataForm.value.honorific + ' ' + dataForm.value.name;
         const res = await $fetch(config.public.serviceUrl + '/download', {
             method: 'POST',
@@ -146,8 +147,7 @@ const handleFormSubmit = async () => { console.log(JSON.parse(sessionStorage.get
         dataForm.value.agreement = false;
         store.dataForm = dataForm.value;
         sessionStorage.setItem('download-log', JSON.stringify(store.dataForm));
-
-        downloadBrochure();
+        
         toast.add({ title: 'Document Sent Succesfully', color: 'sky' });
     } catch (error) {
         console.log(error);
