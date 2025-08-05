@@ -69,7 +69,7 @@ const { data: brochuresRaw } = await useAsyncData(() =>
     .all()
 )
 
-console.log('Raw brochures data:', brochuresRaw.value);
+// console.log('Raw brochures data:', brochuresRaw.value);
 
 const baseProduct = computed(() =>
   (brochuresRaw.value || []).map((item) => ({
@@ -121,6 +121,6 @@ watch(baseProduct, (newProducts) => {
 
 // Debug watcher untuk melihat perubahan filter
 watch(filterBrochure, (newFilter, oldFilter) => {
-  console.log('Filter changed from:', oldFilter, 'to:', newFilter)
+  // console.log('Filter changed from:', oldFilter, 'to:', newFilter)
 }, { deep: true })
 </script>
