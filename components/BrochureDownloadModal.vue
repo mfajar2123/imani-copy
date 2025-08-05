@@ -111,7 +111,18 @@ const session = ref()
 const modalActive = defineModel({ type: Boolean, default: false });
 
 const honorificOption = ['Mr.', 'Ms.', 'Mrs.'];
-const dataForm = ref();
+const dataForm = ref({
+  honorific: 'Mr.',
+  name: '',
+  email: '',
+  phone: '',
+  position: '',
+  company: '',
+  city: '',
+  company_field: '',
+  agreement: false
+})
+
 
 const handleFormSubmit = async () => { console.log(JSON.parse(sessionStorage.getItem('download-log') as string));
     try {

@@ -24,7 +24,11 @@ export default defineContentConfig({
         excerpt: z.string(),
         url: z.string().url(),
         cover_image: z.string(),
-        cat: z.number().int().optional(),
+        cat: z.union([z.string(), z.number()]).transform((val) => {
+          // Convert string to number jika diperlukan
+          return typeof val === 'string' ? parseInt(val, 10) : val
+        }),
+
       }),
     }),
   },

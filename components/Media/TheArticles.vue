@@ -66,7 +66,7 @@ const { data: posts } = await useAsyncData('all-posts', () =>
     .all()
 );
 
-console.log(posts.value);
+// console.log(posts.value);
 isLoading.value = false;
 
 const dataArticles = computed(() =>
