@@ -64,7 +64,8 @@ const category = [
 
 const { data: brochuresRaw } = await useAsyncData(() =>
   queryCollection('brochure')
-    .select('product', 'title', 'excerpt', 'cover_image', 'url', 'cat')
+    .select('product', 'title', 'excerpt', 'cover_image', 'date','url', 'cat')
+    .order('date', 'DESC')
     .all()
 )
 
