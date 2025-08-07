@@ -32,5 +32,14 @@ export default defineContentConfig({
 
       }),
     }),
-  },
+
+    career: defineCollection({
+      type: 'page',
+      source: 'career/**',
+      schema: z.object({
+        title: z.string(),
+        date: z.string(),
+      }),
+    }),
+  }
 })

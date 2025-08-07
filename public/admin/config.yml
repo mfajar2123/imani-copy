@@ -47,3 +47,14 @@ collections:
           - { label: "Internet of Things", value: 1 }
           - { label: "Artificial Intelligence", value: 2 }
           - { label: "Others", value: 3 }
+
+  - name: "career"
+    label: "Career"
+    folder: "content/career"
+    format: "frontmatter"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Content", name: "body", widget: "markdown" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
