@@ -27,6 +27,35 @@ ul.wp-block-list li {
   font-weight: 700 !important;
   color: #000 !important;
 }
+.prose p {
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+  line-height: 1;
+}
+.prose ol {
+  list-style-type: decimal;
+
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.prose ul {
+  list-style-type: disc;
+  
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.prose li {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.prose {
+  max-width: none !important;
+}
+
+
 </style>
 
 <template>
@@ -37,7 +66,7 @@ ul.wp-block-list li {
       class="m-4 space-y-2 drop-shadow-md"
     >
       <div class="flex flex-col gap-2 rounded-lg bg-white p-5 text-black">
-        <!-- HEADER -->
+       
         <div
           class="flex cursor-pointer items-center justify-between"
           @click="toggleAccordion(index)"
@@ -52,7 +81,7 @@ ul.wp-block-list li {
           />
         </div>
 
-        <!-- CONTENT -->
+       
         <div
           class="transition-all duration-500 overflow-hidden"
           :class="
