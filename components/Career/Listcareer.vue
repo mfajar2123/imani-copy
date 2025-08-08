@@ -1,8 +1,7 @@
 <script setup lang="ts">
 const isLoading = ref(true);
-const activeIndex = ref<number | null>(null); // Track index yang dibuka
+const activeIndex = ref<number | null>(null);
 
-// Ambil data dari collection "career"
 const { data: career } = await useAsyncData("all-careers", () =>
   queryCollection("career")
     .select("title", "body", "id", "date")
@@ -12,7 +11,6 @@ const { data: career } = await useAsyncData("all-careers", () =>
 
 isLoading.value = false;
 
-// Fungsi toggle buka/tutup
 const toggleAccordion = (index: number) => {
   activeIndex.value = activeIndex.value === index ? null : index;
 };
@@ -24,6 +22,10 @@ const toggleAccordion = (index: number) => {
 }
 ul.wp-block-list li {
   list-style: decimal;
+}
+.prose strong {
+  font-weight: 700 !important;
+  color: #000 !important;
 }
 </style>
 
@@ -59,12 +61,11 @@ ul.wp-block-list li {
               : 'max-h-0 opacity-0'
           "
         >
-          
-            <ContentRenderer
-              :value="item"
-              class="prose prose-li:marker:text-black prose-ol:list-decimal prose-ul:list-disc prose-ol:pl-6 prose-ul:pl-6 text-black task"
-            />
-          
+          <ContentRenderer
+            :value="item"
+            class="prose prose-li:marker:text-black prose-ol:list-decimal prose-ul:list-disc prose-ol:pl-6 prose-ul:pl-6 text-black task"
+          />
+
           <div class="text-center mt-10">
             <NuxtLink :to="'/career-apply?ref=' + item.title + '#main-apply'">
               <button
