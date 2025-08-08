@@ -3,10 +3,10 @@ const isLoading = ref(true);
 const activeIndex = ref<number | null>(null); // Track index yang dibuka
 
 // Ambil data dari collection "career"
-const { data: career } = await useAsyncData('all-careers', () =>
-  queryCollection('career')
-    .select('title', 'body', 'id', 'date')
-    .order('date', 'DESC')
+const { data: career } = await useAsyncData("all-careers", () =>
+  queryCollection("career")
+    .select("title", "body", "id", "date")
+    .order("date", "DESC")
     .all()
 );
 
@@ -34,9 +34,7 @@ ul.wp-block-list li {
       :key="item.id"
       class="m-4 space-y-2 drop-shadow-md"
     >
-      <div
-        class="flex flex-col gap-2 rounded-lg bg-white p-5 text-black"
-      >
+      <div class="flex flex-col gap-2 rounded-lg bg-white p-5 text-black">
         <!-- HEADER -->
         <div
           class="flex cursor-pointer items-center justify-between"
@@ -55,11 +53,18 @@ ul.wp-block-list li {
         <!-- CONTENT -->
         <div
           class="transition-all duration-500 overflow-hidden"
-          :class="activeIndex === index ? 'max-h-screen opacity-100 mt-4' : 'max-h-0 opacity-0'"
+          :class="
+            activeIndex === index
+              ? 'max-h-screen opacity-100 mt-4'
+              : 'max-h-0 opacity-0'
+          "
         >
-          <div class="text-black p-4 task">
-            <ContentRenderer :value="item" />
-          </div>
+          
+            <ContentRenderer
+              :value="item"
+              class="prose prose-li:marker:text-black prose-ol:list-decimal prose-ul:list-disc prose-ol:pl-6 prose-ul:pl-6 text-black task"
+            />
+          
           <div class="text-center mt-10">
             <NuxtLink :to="'/career-apply?ref=' + item.title + '#main-apply'">
               <button
